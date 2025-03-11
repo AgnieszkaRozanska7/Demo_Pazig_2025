@@ -1,4 +1,6 @@
-﻿using System;
+﻿using CalculatorApp.Services;
+using CalculatorApp.Services.Interfaces;
+using System;
 
 namespace CalculatorApp
 {
@@ -6,7 +8,9 @@ namespace CalculatorApp
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            ICalculate calculate = new Calculate();
+            Console.WriteLine($"Wybik dodawania: {calculate.Add(10, 15)}");
+            Console.ReadLine();
         }
     }
 }
