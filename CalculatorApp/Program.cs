@@ -10,6 +10,8 @@ namespace CalculatorApp
         {
             ICalculate calculate = new Calculate();
             Console.WriteLine($"Wybik dodawania: {calculate.Add(10, 15)}");
+            Console.WriteLine($"Wybik odejmowania: {calculate.Minus(10, 15)}");
+
             Console.ReadLine();
         }
     }
