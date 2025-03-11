@@ -5,5 +5,7 @@
         double Add(double value1, double value2);
 
         double Minus(double value1, double value2);
+
+        double Multiply(double value1, double value2);
     }
 }
